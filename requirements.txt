@@ -5,7 +5,7 @@ azure-identity
 azure-keyvault-secrets
 wheel
 pillow
-wagtail
+wagtail==2.12
 django-colorful
 django-el-pagination
 django-social-share
