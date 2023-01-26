@@ -1,0 +1,83 @@
+{% load static i18n wagtailcore_tags wagtailimages_tags wagtailroutablepage_tags wagtailuserbar puput_tags %}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>
+        {% block title %}
+            Ups!! Pagina no encontrada
+        {% endblock title %}
+    </title>
+    <meta charset="utf-8"/>
+
+
+    <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,100italic,100,400italic,500,500italic,700,900,700italic,900italic' rel='stylesheet' type='text/css'>
+    {% block css %}
+        <link rel='stylesheet' href="{% static 'puput/css/bootstrap.min.css' %}" type='text/css'/>
+        <link rel="stylesheet" href="{% static 'puput/css/font-awesome.min.css' %}">
+        <link rel='stylesheet' href="{% static 'renda/css/jquery.bxslider.css' %}" type='text/css'/>
+        <link rel="stylesheet" href="{% static 'renda/css/style.css' %}">
+
+        <!-- <link rel="stylesheet" href="{% static 'puput/css/puput.css' %}"/> -->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="{% static 'apple-icon-57x57.png' %}">
+        <link rel="apple-touch-icon" sizes="60x60" href="{% static 'apple-icon-60x60.png' %}">
+        <link rel="apple-touch-icon" sizes="72x72" href="{% static 'apple-icon-72x72.png' %}">
+        <link rel="apple-touch-icon" sizes="76x76" href="{% static 'apple-icon-76x76.png' %}">
+        <link rel="apple-touch-icon" sizes="114x114" href="{% static 'apple-icon-114x114.png' %}">
+        <link rel="apple-touch-icon" sizes="120x120" href="{% static 'apple-icon-120x120.png' %}">
+        <link rel="apple-touch-icon" sizes="144x144" href="{% static 'apple-icon-144x144.png' %}">
+        <link rel="apple-touch-icon" sizes="152x152" href="{% static 'apple-icon-152x152.png' %}">
+        <link rel="apple-touch-icon" sizes="180x180" href="{% static 'apple-icon-180x180.png' %}">
+        <link rel="icon" type="image/png" sizes="192x192"  href="{% static 'android-icon-192x192.png' %}">
+        <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon-32x32.png' %}">
+        <link rel="icon" type="image/png" sizes="96x96" href="{% static 'favicon-96x96.png' %}">
+        <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon-16x16.png' %}">
+        <link rel="manifest" href="{% static 'manifest.json' %}">
+        <link rel="icon"href="{% static 'favicon.ico' %}">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{% static 'ms-icon-144x144.png' %}">
+
+    {% endblock %}
+</head>
+<body>
+    <div class="container">    
+
+
+<div class="row">
+
+
+
+    <div class="col-md-12">
+        <article class="blog-post">
+            <div class="blog-post-body">
+                <h1><a href="/">404</a></h1>
+                <a href="/"><img src="{% static 'not-stonks-meme.gif' %}" alt="404"/></a>
+                <h2><a href="/">Oops!! Pagina no encontrada!!!</a></h2>
+                <div class="blog-post-text">
+                    <h3 style="text-align:center"><a href="/">Volver al home</a></h3>
+                </div>
+            </div>
+        </article>
+    </div>
+
+
+
+
+   
+</div>
+
+
+
+
+{% block js %}
+    <!-- <script src="{% static 'puput/js/jquery.min.js' %}"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="{% static 'puput/js/puput.js' %}"></script>
+    <script src="{% static 'renda/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'renda/js/jquery.bxslider.js' %}"></script>
+    <script src="{% static 'renda/js/mooz.scripts.min.js' %}"></script>
+{% endblock js %}
+</body>
+</html>

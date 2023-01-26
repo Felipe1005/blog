@@ -1,0 +1,20 @@
+{% load i18n wagtailimages_tags puput_tags %}
+
+{% for entry in entries %}
+<article class="widget-post">
+    {% if entry.header_image %}
+    <div class="post-image">
+        {% image entry.header_image fill-90x60 as header_image %}
+        <a href="{% entry_url entry blog_page %}"><img src="{{ header_image.url }}" alt="{{ entry.header_image.title }}"></a>
+    </div>
+    {% endif %}
+    <div class="post-body">
+        <h2><a href="{% entry_url entry blog_page %}">{{ entry.title }}</a></h2>
+        <div class="post-meta">
+            <span><i class="fa fa-clock-o"></i>{{ entry.date|date:"SHORT_DATE_FORMAT" }}</span>
+        </div>
+    </div>
+</article>
+{% empty %}
+{% trans 'No entries yet' %}
+{% endfor %}

@@ -1,0 +1,18 @@
+# Do not include azure-functions-worker as it may conflict with the Azure Functions platform
+
+azure-functions
+azure-identity
+azure-keyvault-secrets
+wheel
+pillow
+wagtail
+django-colorful
+django-el-pagination
+django-social-share
+# django-redis
+# wagtail-cache
+whitenoise
+puput
+# mssql-django
+flake8
+django-storages[azure]<=1.12.1
